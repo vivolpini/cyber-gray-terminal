@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-mono-bold mb-6">ricardobeat.com</h3>
             <p className="text-cyber-light mb-6 max-w-md">
-              Providing expert cybersecurity solutions to protect your digital assets and infrastructure against evolving threats.
+              Providing expert cybersecurity insights to protect your digital assets and infrastructure against evolving threats.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-cyber-light hover:text-white transition-colors" aria-label="GitHub">
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
               <div>
                 <input 
                   type="email" 
-                  placeholder="Your email" 
+                  placeholder="ricardo@ricardobeat.com" 
                   className="w-full bg-cyber-accent text-white placeholder-cyber-medium p-3 rounded border-none focus:outline-none focus:ring-1 focus:ring-white"
                 />
               </div>
