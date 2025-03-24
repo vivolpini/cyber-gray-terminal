@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
         
         <p className="text-cyber-medium text-lg md:text-xl max-w-2xl mx-auto mb-10">
           <TerminalText 
-            text="Specialized in advanced threat detection, vulnerability assessment, and implementing robust security solutions for businesses and organizations." 
+            text="Specialized in advanced threat detection, vulnerability assessment, and enablement of  cyber culture and awarness inside organizations." 
             typingSpeed={15}
             startDelay={2500}
           />
