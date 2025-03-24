@@ -11,11 +11,11 @@ const About: React.FC = () => {
       reversed={true}
     >
       <p className="text-cyber-medium mb-4">
-        With over a decade of experience in cybersecurity, I specialize in protecting businesses from emerging digital threats through proactive security measures and strategic planning.
+        With several decades of experience in cybersecurity, specialized in protecting businesses from emerging digital threats through proactive security measures and strategic planning.
       </p>
       
       <p className="text-cyber-medium mb-6">
-        My approach combines technical expertise with a deep understanding of business operations, ensuring security solutions that not only protect your assets but also support your organizational goals.
+        I love to produce contents that  combines technical expertise with a deep understanding of what is happening under the covers, explaining security solutions and sharing experiences.
       </p>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
@@ -25,6 +25,7 @@ const About: React.FC = () => {
             <li>Certified Information Systems Security Professional (CISSP)</li>
             <li>Certified Ethical Hacker (CEH)</li>
             <li>Offensive Security Certified Professional (OSCP)</li>
+            <li>Certifies Security Security manager (CISM)</li>
           </ul>
         </div>
         
