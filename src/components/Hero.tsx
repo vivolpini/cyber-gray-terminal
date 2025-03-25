@@ -44,12 +44,12 @@ const Hero: React.FC = () => {
         className="max-w-4xl mx-auto text-center transition-all duration-700 opacity-0 translate-y-10"
       >
         <div className="inline-block mb-3 px-3 py-1 bg-cyber-light text-cyber-dark text-xs rounded-full">
-          <TerminalText text="CYBERSECURITY SPECIALIST" typingSpeed={20} />
+          <TerminalText text="CYBERSECURITY PROFESSIONAL" typingSpeed={20} />
         </div>
         
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-mono-bold mb-6 tracking-tight">
           <TerminalText 
-            text="Securing digital landscapes with precision and expertise" 
+            text="Advanced protection for your digital infrastructure" 
             typingSpeed={40}
             startDelay={800}
           />
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
         
         <p className="text-cyber-medium text-lg md:text-xl max-w-2xl mx-auto mb-10">
           <TerminalText 
-            text="Specialized in advanced threat detection, vulnerability assessment, and enablement of  cyber culture and awarness inside organizations." 
+            text="Expert in penetration testing, security audits, and implementing robust defense systems to protect your organization from evolving cyber threats." 
             typingSpeed={15}
             startDelay={2500}
           />
@@ -68,13 +68,13 @@ const Hero: React.FC = () => {
             href="#contact" 
             className="px-6 py-3 bg-cyber-dark text-white rounded hover:bg-cyber-accent transition-colors duration-200 min-w-40 text-center"
           >
-            Get in touch
+            Contact me
           </a>
           <a 
             href="#services" 
             className="px-6 py-3 border border-cyber-dark text-cyber-dark rounded hover:bg-cyber-light transition-colors duration-200 min-w-40 text-center"
           >
-            Explore services
+            View services
           </a>
         </div>
       </div>
