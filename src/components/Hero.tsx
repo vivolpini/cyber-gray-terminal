@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
         
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-mono-bold mb-6 tracking-tight">
           <TerminalText 
-            text="Spreading cybersecurity culture" 
+            text="Spreading cybersecurity culture and knowledge" 
             typingSpeed={40}
             startDelay={800}
           />
