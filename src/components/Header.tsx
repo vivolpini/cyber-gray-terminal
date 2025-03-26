@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,14 +28,23 @@ const Header: React.FC = () => {
         
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
-            {['Home', 'Services', 'About', 'Contact'].map((item) => (
+            {['Home', 'Services', 'About', 'Content', 'Contact'].map((item) => (
               <li key={item}>
-                <a 
-                  href={`#${item.toLowerCase()}`} 
-                  className="text-cyber-dark hover:text-cyber-medium transition-colors duration-200 text-sm tracking-wide"
-                >
-                  {item}
-                </a>
+                {item === 'Content' ? (
+                  <Link 
+                    to="/content" 
+                    className="text-cyber-dark hover:text-cyber-medium transition-colors duration-200 text-sm tracking-wide"
+                  >
+                    {item}
+                  </Link>
+                ) : (
+                  <a 
+                    href={`#${item.toLowerCase()}`} 
+                    className="text-cyber-dark hover:text-cyber-medium transition-colors duration-200 text-sm tracking-wide"
+                  >
+                    {item}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -54,15 +64,25 @@ const Header: React.FC = () => {
         <div className="md:hidden fixed inset-0 z-40 bg-white bg-opacity-95 backdrop-blur-sm pt-20">
           <nav className="p-6">
             <ul className="flex flex-col space-y-6">
-              {['Home', 'Services', 'About', 'Contact'].map((item) => (
+              {['Home', 'Services', 'About', 'Content', 'Contact'].map((item) => (
                 <li key={item} className="border-b border-cyber-light pb-2">
-                  <a
-                    href={`#${item.toLowerCase()}`}
-                    className="text-cyber-dark hover:text-cyber-medium transition-colors duration-200 text-xl"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item}
-                  </a>
+                  {item === 'Content' ? (
+                    <Link
+                      to="/content"
+                      className="text-cyber-dark hover:text-cyber-medium transition-colors duration-200 text-xl"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item}
+                    </Link>
+                  ) : (
+                    <a
+                      href={`#${item.toLowerCase()}`}
+                      className="text-cyber-dark hover:text-cyber-medium transition-colors duration-200 text-xl"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
